@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+joblib
+PyYAML
+boto3
+fastapi
+uvicorn
+imbalanced-learn
+#pytest

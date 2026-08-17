@@ -1,0 +1,20 @@
+target_column: fraudulent
+
+required_input_columns:
+  - title
+  - description
+  - requirements
+
+optional_input_columns:
+  - company_profile
+  - salary_range
+  - required_experience
+
+keep_columns:
+  - title
+  - description
+  - requirements
+  - company_profile
+  - salary_range
+  - required_experience
+  - fraudulent
