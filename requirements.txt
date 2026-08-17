@@ -8,4 +8,4 @@ boto3
 fastapi
 uvicorn
 imbalanced-learn
-#pytest
+pytest
