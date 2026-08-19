@@ -2,8 +2,9 @@ from src.components.data_transformation import prepare_data
 from src.constants import TEXT_COLUMNS
 
 
-def test_prepare_data_uses_selected_columns():
+def test_prepare_data_uses_selected_columns(sample_raw_data_path):
     X_train, X_validation, X_test, y_train, y_validation, y_test = prepare_data(
+        path=sample_raw_data_path,
         save_processed=False
     )
 

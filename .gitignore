@@ -9,3 +9,4 @@ logs/
 data/
 models/*.pkl
 models/metrics.json
+.env

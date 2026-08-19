@@ -6,3 +6,5 @@ logs
 .github
 data/raw
 data/processed
+Readme.md
+.env

@@ -3,8 +3,11 @@ from src.components.model_trainer import train_model
 from src.utils.main_utils import combine_text_columns
 
 
-def test_model_can_train_and_predict(tmp_path):
-    X_train, X_validation, _, y_train, _, _ = prepare_data(save_processed=False)
+def test_model_can_train_and_predict(tmp_path, sample_raw_data_path):
+    X_train, X_validation, _, y_train, _, _ = prepare_data(
+        path=sample_raw_data_path,
+        save_processed=False,
+    )
 
     train_sample = X_train.groupby(y_train).head(50)
     target_sample = y_train.loc[train_sample.index]
