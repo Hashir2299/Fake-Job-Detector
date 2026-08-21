@@ -1,32 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: fake-job-detector
+
 spec:
   replicas: 1
+
   selector:
     matchLabels:
       app: fake-job-detector
+
   template:
     metadata:
       labels:
         app: fake-job-detector
+
     spec:
       containers:
         - name: fake-job-detector
+
           image: fake-job-detector:latest
+
           imagePullPolicy: IfNotPresent
+
           ports:
             - containerPort: 8000
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 8000
-            initialDelaySeconds: 10
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 8000
-            initialDelaySeconds: 20
-            periodSeconds: 20
