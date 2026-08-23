@@ -8,7 +8,7 @@ spec:
   selector:
     app: fake-job-detector
 
-  type: NodePort
+  type: LoadBalancer
 
   ports:
     - port: 8000

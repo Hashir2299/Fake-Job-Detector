@@ -20,9 +20,9 @@ spec:
       containers:
         - name: fake-job-detector
 
-          image: fake-job-detector:latest
+          image: 731976569576.dkr.ecr.us-east-1.amazonaws.com/fake-job-detector:latest
 
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
 
           ports:
             - containerPort: 8000
